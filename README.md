@@ -1,0 +1,1 @@
+# cloud-template-dotnet-core

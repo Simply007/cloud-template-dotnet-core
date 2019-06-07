@@ -1,15 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using cloud_template_dotnet_core.Models;
+using KenticoCloud.Delivery;
 
 namespace cloud_template_dotnet_core.Controllers
 {
     public class HomeController : Controller
     {
+        private IDeliveryClient _deliveryClient;
+
+        public HomeController(IDeliveryClient deliveryClient)
+        {
+            _deliveryClient = deliveryClient;
+        }
+
         public IActionResult Index()
         {
             return View();

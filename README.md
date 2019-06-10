@@ -4,6 +4,8 @@
 
 Kentico cloud web template using ASP.NET Core MVC and Kentico Cloud.
 
+![template preview](/template.jpg)
+
 ## Get started
 
 ### Prerequisites

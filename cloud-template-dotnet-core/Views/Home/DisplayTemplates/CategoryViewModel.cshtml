@@ -1,0 +1,18 @@
+﻿@model cloud_template_dotnet_core.ViewModels.CategoryViewModel;
+
+
+<div class="card">
+    <div class="card-header" id="@Model.HeadingId">
+        <h2 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#@Model.ContentId" aria-expanded="true" aria-controls="collapse">
+                @Model.Name
+            </button>
+        </h2>
+    </div>
+
+    <div id="@Model.ContentId" class="collapse" aria-labelledby="@Model.HeadingId" data-parent="#accordionExample">
+        <div class="card-body">
+            @Html.DisplayFor(m => m.Description)
+        </div>
+    </div>
+</div>

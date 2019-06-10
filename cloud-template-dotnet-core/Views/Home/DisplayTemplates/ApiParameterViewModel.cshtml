@@ -1,0 +1,14 @@
+﻿@model cloud_template_dotnet_core.ViewModels.ApiParameterViewModel
+
+<div class="list-group-item">
+    <div class="card-body">
+        <h5>@Model.Name <span class="badge badge-secondary">@Model.Schema</span></h5>
+
+        <p class="card-text">
+            @Html.DisplayFor(m => m.Description)
+        </p>
+        <div>
+            Use in <span class="badge badge-info">@Model.Location</span>
+        </div>
+    </div>
+</div>

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using KenticoCloud.Delivery;
+using KenticoCloud.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -31,7 +33,9 @@ namespace cloud_template_dotnet_core
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            services.AddDeliveryClient(Configuration);
+            services
+                .AddSingleton<ITypeProvider, CustomTypeProvider>()
+                .AddDeliveryClient(Configuration);
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }

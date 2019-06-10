@@ -1,0 +1,11 @@
+﻿@model cloud_template_dotnet_core.ViewModels.PathOperationViewModel
+
+<h5>@Model.Summary <span class="badge badge-primary">@Model.Operation.FirstOrDefault()?.Name</span></h5>
+@Html.DisplayFor(m => m.Description)
+
+
+<h5>Parameters</h5>
+
+<div class="list-group">
+    @Html.DisplayFor(m => m.Parameters)
+</div>

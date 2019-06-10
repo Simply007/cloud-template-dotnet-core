@@ -1,5 +1,3 @@
-using System;
-
 namespace cloud_template_dotnet_core.Models
 {
     public class ErrorViewModel

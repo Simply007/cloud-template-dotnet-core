@@ -1,0 +1,10 @@
+﻿@model cloud_template_dotnet_core.ViewModels.ApiPathViewModel
+
+    <div class="card">
+        <div class="card-header">
+            @Model.Path
+        </div>
+        <div class="card-body">
+            @Html.DisplayFor(m => m.PathOperations)
+        </div>
+    </div>

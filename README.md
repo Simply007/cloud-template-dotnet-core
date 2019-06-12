@@ -26,7 +26,7 @@ Kentico cloud web template using ASP.NET Core MVC and Kentico Cloud.
 1. [Enable Content Management API](https://docs.kenticocloud.com/tutorials/set-up-projects/migrate-content/importing-to-kentico-cloud#a-enabling-the-api-for-your-project)
 1. Import [content.zip](/content.zip) data using [Template manager](https://kentico.github.io/cloud-template-manager/import-from-file)
     * Use `Project Id` and `Content Management API key` from previously generated project.
-1. Place the `ProjectId` to the  [`/source/appsettings.json`](/source/appsettings.js#L9) configuration file.
+1. Place the `ProjectId` to the  [`/source/cloud-template-dotnet-core/appsettings.json`](/source/cloud-template-dotnet-core/appsettings.js#L9) configuration file.
 1. Run development environment (in `/source` folder)
 
     ```sh
